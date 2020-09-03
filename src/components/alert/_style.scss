@@ -1,0 +1,59 @@
+$dwidth: 300px !default;
+$dheight: 48px !default;
+$paddingleftright: 20px !default; 
+$paddingtopbottom: 12px !default;
+$scaleEnd: scaleY(0) !default;
+
+.alert {
+  position: relative;
+  display: inline-block;
+  color: $body-color;
+  width: $dwidth;
+  padding: $paddingtopbottom $paddingleftright;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  border-radius: $border-radius;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  transition: all .2s ease-in;;
+  border: $btn-border-width solid transparent;
+  cursor: pointer;
+  > p {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    margin: 0;
+  }
+}
+.alert-close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 11px;
+}
+
+.alert-success {
+  color: $white;
+  background: $success;
+  border-color: $success;
+}
+.alert-danger {
+  color: $white;
+  background: $danger;
+  border-color: $danger;
+}
+.alert-default {
+  color: $white;
+  background: #0D6EFD;
+  border-color: #0D6EFD;
+}
+.alert-warning {
+  color: $white;
+  background: $warning;
+  border-color: $warning;
+}
+
+.disapper {
+  transform: $scaleEnd;
+}
