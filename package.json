@@ -14,6 +14,7 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-transition-group": "^4.4.0",
+    "@types/storybook__addon-info": "^5.2.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "classnames": "^2.2.6",
     "node-sass": "^4.14.1",
@@ -50,12 +51,16 @@
     "@babel/core": "^7.11.5",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^6.0.21",
+    "@storybook/addon-storysource": "^6.0.21",
     "@storybook/node-logger": "^6.0.21",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.21",
     "@testing-library/react": "^9.5.0",
+    "add": "^2.0.6",
     "babel-loader": "^8.1.0",
+    "react-docgen-typescript-loader": "^3.7.2",
     "react-is": "^16.13.1"
   }
 }
