@@ -8,11 +8,13 @@ import MenuItem from './components/menu/MenuItem';
 import SubMenu from './components/menu/SubMenu';
 // import Icon from './components/icon/Icon';
 import Transition from './components/transition/Transition';
-
+import Input from './components/input/Input';
+// import { AutoComplete, DataSourceType } from './components/autoComplete/AutoComplete';
 
 // library.add(fas)
 function App() {
   const [show, setShow] = useState(false)
+ 
   return (
     <div className="App" style={{height:'10000px',marginLeft:'8px'}}>
       <header className="App-header">
@@ -65,6 +67,17 @@ function App() {
                   cool link 3
                 </MenuItem>
               </Menu>
+            </div>
+            {/* ##################################################################Input Component############################################################################# */}
+            <div style={{width:'500px'}}>
+              <h2>Input Component Test</h2>
+              <Input />
+              <Input disabled placeholder="disabled input"/>
+              <Input icon='spinner' placeholder="input with icon"/>
+              <Input defaultValue="large size" size="lg"/>
+              <Input placeholder="small size" size="sm"/>
+              <Input defaultValue="prepend text" prepend="https://"/>
+              <Input append=".com" defaultValue="google"/>
             </div>
           </div>
         </Transition>
